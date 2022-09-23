@@ -20,8 +20,8 @@ img {
 
 section {
 	max-width: 37rem;
+	flex: 1 1 37rem;
 }
-
 
 /* ----- SUGGESTED COLORS -----
     - ARTICLES
@@ -44,11 +44,12 @@ section {
 
 article {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
 	color: #000;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding: 2rem;
+	align-items: flex-start;
+	justify-content: space-around;
+	width: 100%;
 }
 
 #cougar {
@@ -64,11 +65,9 @@ article {
 }
 
 .text {
-	background: #fff;
-	padding: 1.5rem 3rem 2rem;
+	padding: 0rem 2rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	/* margin: 1rem 3rem;*/
 }
 
 .photo p {
@@ -76,7 +75,7 @@ article {
 }
 
 h2 {
-	text-align: center;
+	margin: 0;
 }
 
 header {
@@ -134,12 +133,4 @@ a:hover {
 
 #tiger a:hover {
 	color: #171717;
-}
-
-#tiger .text a {
-	color: #652FBD;
-}
-
-#tiger .text a:hover {
-	color: #2B24F0;
 }
